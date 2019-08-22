@@ -12,7 +12,7 @@ export class Gcal2SlackController {
 
     }
 
-    @Post("/gcal2slack")
+    @Post("/auto")
     async updateStatus(@Body({required: true}) data: any, maxEventTime = 5) {
         console.log(data);
         const start = moment(data.starts, "MMMM DD, YYYY at HH:mmA");

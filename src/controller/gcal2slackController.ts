@@ -12,6 +12,17 @@ export class Gcal2SlackController {
 
     }
 
+    /*
+    data:
+    {
+        "starts":"August 22, 2019 at 01:40PM",
+        "ends":"August 22, 2019 at 02:00PM",
+        "workspaceURL":"abc",
+        "slackAuthBearer":"abc",
+        "status_text": "abc",
+        "status_emoji": ":handshake:",
+    }
+    */
     @Post("/auto")
     async updateStatus(@Body({required: true}) data: any, maxEventTime = 5) {
         console.log(data);
@@ -27,8 +38,8 @@ export class Gcal2SlackController {
                 uri: 'https://' + data.workspaceURL + '.slack.com/api/users.profile.set',
                 body: {
                     "profile": {
-                        "status_text": "In a Meeting",
-                        "status_emoji": ":handshake:", // emoji needs to be english
+                        "status_text": data.status_text ? data.status_text : "In a Meeting",
+                        "status_emoji": data.status_emoji ? data.status_emoji : ":handshake:", // emoji needs to be english
                         "status_expiration": moment().unix() + lengthInSec // calculate now + duration of meeting to avoid timezone issues
                     }
                 },

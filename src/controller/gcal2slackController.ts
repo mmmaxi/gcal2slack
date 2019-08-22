@@ -34,13 +34,14 @@ export class Gcal2SlackController {
                 },
                 headers: {
                     'content-type': 'application/json',
+                    'charset': 'utf-8',
                     'authorization': 'Bearer ' + data.slackAuthBearer + '',
                 },
                 json: true // Automatically stringify the body to JSON
             };
             const answer = await rp(optionsAction);
             return {
-                success: true, data: data, answer: answer
+                success: true, data: data, parsedData: {starts: start, ends: end}, answer: answer
             }
         } else {
             return {

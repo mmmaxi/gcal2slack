@@ -6,9 +6,8 @@ This small NodeJS Server is meant to automatically update your slack status when
 
 ## Setup
 
-For now you need to create a applet on IFTTT which triggers the endpoint of this server to update your slack status. This needs to look like this:
+For now you need to create a applet on IFTTT which triggers the endpoint of this server to update your slack status. This needs to look like [this](ifttt-screenshot.png).
 
-![ifttt-screenshot](ifttt-screenshot.png)
 
 The `workspaceURL` in the Body payload of the webrequest needs to be the first part of your Slack Worspace's URL e.g. it is `abc` if your workspace is `https://abc.slack.com/`
 

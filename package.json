@@ -1,11 +1,12 @@
 {
   "name": "gcal2slack",
   "version": "1.0.0",
-  "description": "A Node service which sets your slack status according to your Google Calendar Meetings ",
+  "description": "A Node service which sets your slack status according to your Google Calendar Meetings",
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon -e ts  --exec \"npm start\""
   },
+  "repository": "https://github.com/mmmaxi/gcal2slack",
   "author": "mmmaxi",
   "license": "ISC",
   "dependencies": {

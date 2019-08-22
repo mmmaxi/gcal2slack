@@ -15,4 +15,4 @@ To obtain the `slackAuthBearer` follow the instructions from Slack [here](https:
 
 ## Feedback
 
-I am happy to get feedback to all this work. 
+I am happy to get feedback to all this work.

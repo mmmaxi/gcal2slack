@@ -2,6 +2,6 @@
   "name": "gcal2slack",
   "description": "A Node service which sets your slack status according to your Google Calendar Meetings ",
   "repository": "https://github.com/mmmaxi/gcal2slack",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "logo": "https://github.com/mmmaxi/gcal2slack/raw/master/other/gcal2slack.png",
   "keywords": ["slack", "google calendar", "meeting"]
 }

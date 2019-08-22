@@ -10,6 +10,20 @@ You can simply deploy it on heroku.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+Alternatively you can host the service on its own by cloning the repository
+```
+git clone https://github.com/mmmaxi/gcal2slack.git
+cd gcal2slack/
+``` 
+installing the npm modules
+```
+npm install
+``` 
+running the application with 
+```
+npm start
+``` 
+now you are good to go.
 
 ## Setup
 

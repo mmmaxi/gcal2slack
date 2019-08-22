@@ -6,7 +6,7 @@ import * as cors from 'cors';
 
 
 // The port the express app will listen on
-const port: number = Number(process.env.PORT || 3000);
+const port: number = Number(process.env.PORT || 3005);
 
 // create express app
 let express = require("express");
@@ -27,5 +27,5 @@ useExpressServer(app, {
 app.listen(port); // run your express server
 
 
-console.log("gcal2slack server has started on port 3000. Open http://localhost:3000/ to see results");
+console.log("gcal2slack server has started on port " + port + ". Open http://localhost:" + port + "/ to see results");
 

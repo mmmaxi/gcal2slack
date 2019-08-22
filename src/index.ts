@@ -8,19 +8,17 @@ import * as cors from 'cors';
 // The port the express app will listen on
 const port: number = Number(process.env.PORT || 3000);
 
-
 // create express app
-let express = require("express"); // or you can import it if you have installed typings
-let app = express(); // your created express server
+let express = require("express");
+let app = express();
 app.use(logger('dev'));
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json()); // you can configure it the way you want
-// app.use(cache.middleware('10 seconds')); // Cache Middleware initialization
+app.use(bodyParser.json());
 app.use(cors());
 
 
-useExpressServer(app, { // register created express server in routing-controllers
+useExpressServer(app, {
     routePrefix: "/v1",
     validation: true,
     controllers: [__dirname + "/controller/*.ts"]

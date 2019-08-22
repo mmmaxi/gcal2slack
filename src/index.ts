@@ -27,5 +27,5 @@ useExpressServer(app, {
 app.listen(port); // run your express server
 
 
-console.log("Backend API server has started on port 3000. Open http://localhost:3000/ to see results");
+console.log("gcal2slack server has started on port 3000. Open http://localhost:3000/ to see results");
 

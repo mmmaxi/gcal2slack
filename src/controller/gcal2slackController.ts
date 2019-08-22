@@ -40,7 +40,7 @@ export class Gcal2SlackController {
             };
             const answer = await rp(optionsAction);
             return {
-                success: true, data: data, parsedData: {starts: start, ends: end}, answer: answer
+                success: true, data: data, parsedData: {starts: start.toDate(), ends: end.toDate()}, answer: answer
             }
         } else {
             return {

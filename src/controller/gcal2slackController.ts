@@ -33,8 +33,7 @@ export class Gcal2SlackController {
                     }
                 },
                 headers: {
-                    'content-type': 'application/json',
-                    'charset': 'utf-8',
+                    'content-type': 'application/json; charset=utf-8',
                     'authorization': 'Bearer ' + data.slackAuthBearer + '',
                 },
                 json: true // Automatically stringify the body to JSON

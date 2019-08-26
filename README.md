@@ -42,9 +42,9 @@ The `/auto` endpoint intends the following POST object:
 ```
 
 
-The `status_text` in the Body payload of the webrequest is the text for the status within slack. By default it is "In a Meeting"
+The `status_text` in the Body payload of the webrequest is the text for the status within slack. By default it is `In a Meeting`
 
-The `status_emoji` in the Body payload of the webrequest is the [emoji](https://www.webfx.com/tools/emoji-cheat-sheet/) which the status should be set to. By default it is ":handshake:"
+The `status_emoji` in the Body payload of the webrequest is the [emoji](https://www.webfx.com/tools/emoji-cheat-sheet/) which the status should be set to. By default it is `:handshake:`
 
 The `workspaceURL` in the Body payload of the webrequest needs to be the first part of your Slack Worspace's URL e.g. it is `abc` if your workspace is `https://abc.slack.com/`
 

@@ -22,7 +22,7 @@
     "@types/node": "^8.0.29",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "morgan": "^1.9.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
